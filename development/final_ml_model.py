@@ -10,6 +10,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from collections import Counter
 import warnings
+
+import final_ml_model
 warnings.filterwarnings('ignore')
 
 class FinalScholarshipModel:
@@ -273,22 +275,26 @@ class FinalScholarshipModel:
         
         return predict_scholarship_eligibility
     
-    def save_model(self, filename='final_scholarship_model.pkl'):
+    def save_model(self, filename='production/final_scholarship_model.pkl'):
         """Save the trained model"""
-        
+
         if self.model is None:
             print("❌ No model to save")
             return
-        
+
+        import os
+        os.makedirs("production", exist_ok=True)
+
         model_data = {
             'model': self.model,
             'model_name': self.model_name,
             'feature_names': self.feature_names,
             'feature_importance': self.feature_importance
         }
-        
+
         joblib.dump(model_data, filename)
         print(f"💾 Model saved to: {filename}")
+
     
     def load_model(self, filename='final_scholarship_model.pkl'):
         """Load saved model"""

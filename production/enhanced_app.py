@@ -171,7 +171,7 @@ class EnhancedScholarshipRecommender:
     def load_model(self):
         """Load the ML model"""
         try:
-            self.model_data = joblib.load('scholarship_model_quick.pkl')
+            self.model_data = joblib.load('final_scholarship_model.pkl')
             return True
         except FileNotFoundError:
             return False

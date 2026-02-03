@@ -5,7 +5,8 @@ print("🔍 CHECKING DATA QUALITY")
 print("=" * 40)
 
 # Load data
-df = pd.read_csv('ml_ready_data.csv')
+df = pd.read_csv("archived/ml_ready_data.csv")
+
 print(f"Original shape: {df.shape}")
 print(f"Columns: {list(df.columns)}")
 
