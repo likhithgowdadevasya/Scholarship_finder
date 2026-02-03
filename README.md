@@ -69,11 +69,11 @@ scholarship_recommender/
 ```
 
 ## Team Members
-
-- Rahul K U (4SF23CS163)
-- Nandan V Poojary (4SF23CS126)
-- Rohit L (4SF23CS171)
 - Likhith Gowda (4SF23CS092)
+- Rahul K U (4SF23CS163)
+- Rohit L (4SF23CS171)
+- Nandan V Poojary (4SF23CS126)
+
 
 ## Guide
 
