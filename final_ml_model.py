@@ -10,6 +10,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from collections import Counter
 import warnings
+import sqlite3
 warnings.filterwarnings('ignore')
 
 class FinalScholarshipModel:
